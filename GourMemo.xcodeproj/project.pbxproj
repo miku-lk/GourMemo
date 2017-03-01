@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F26FB001E66859900D1933D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FAFF1E66859900D1933D /* AppDelegate.swift */; };
+		2F26FB021E66859900D1933D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB011E66859900D1933D /* ViewController.swift */; };
+		2F26FB051E66859900D1933D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB031E66859900D1933D /* Main.storyboard */; };
+		2F26FB071E66859900D1933D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB061E66859900D1933D /* Assets.xcassets */; };
+		2F26FB0A1E66859900D1933D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB081E66859900D1933D /* LaunchScreen.storyboard */; };
+		2F26FB151E66859900D1933D /* GourMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB141E66859900D1933D /* GourMemoTests.swift */; };
+		2F26FB201E66859900D1933D /* GourMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB1F1E66859900D1933D /* GourMemoUITests.swift */; };
+		2F26FB331E6698F200D1933D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB321E6698F200D1933D /* TimelineViewController.swift */; };
+		2F26FB351E66997500D1933D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB341E66997500D1933D /* FavoriteViewController.swift */; };
+		2F26FB371E66A1E000D1933D /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB361E66A1E000D1933D /* FavoriteTableViewCell.swift */; };
+		5CE00011071FCF17438ED5BF /* Pods_GourMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4FAE64D751CA7B77A560A /* Pods_GourMemo.framework */; };
+		9F4708927C15CD8D0B85B7F7 /* Pods_GourMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF9A8F7386B609AD626DBA /* Pods_GourMemoTests.framework */; };
+		B5941BCC9EB926B08A6EB3A0 /* Pods_GourMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6845DBFC7DC81443DAD54311 /* Pods_GourMemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F26FB111E66859900D1933D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F26FAF41E66859900D1933D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F26FAFB1E66859900D1933D;
+			remoteInfo = GourMemo;
+		};
+		2F26FB1C1E66859900D1933D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F26FAF41E66859900D1933D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F26FAFB1E66859900D1933D;
+			remoteInfo = GourMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0812B341DFDCBFA04C7E8675 /* Pods-GourMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17DF9A8F7386B609AD626DBA /* Pods_GourMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26FAFC1E66859900D1933D /* GourMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GourMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26FAFF1E66859900D1933D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F26FB011E66859900D1933D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F26FB041E66859900D1933D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F26FB061E66859900D1933D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F26FB091E66859900D1933D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F26FB0B1E66859900D1933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F26FB101E66859900D1933D /* GourMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GourMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26FB141E66859900D1933D /* GourMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourMemoTests.swift; sourceTree = "<group>"; };
+		2F26FB161E66859900D1933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F26FB1B1E66859900D1933D /* GourMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GourMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F26FB1F1E66859900D1933D /* GourMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourMemoUITests.swift; sourceTree = "<group>"; };
+		2F26FB211E66859900D1933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F26FB321E6698F200D1933D /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		2F26FB341E66997500D1933D /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		2F26FB361E66A1E000D1933D /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		64A14BC566E5FB26CDD53DCB /* Pods-GourMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6845DBFC7DC81443DAD54311 /* Pods_GourMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF4FAE64D751CA7B77A560A /* Pods_GourMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABABCB0EBBD5E8CDF715BDFE /* Pods-GourMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemo/Pods-GourMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ADEC409472FC43CD749BBABB /* Pods-GourMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoTests/Pods-GourMemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F223226CF2A50AAC47E0405A /* Pods-GourMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemo/Pods-GourMemo.release.xcconfig"; sourceTree = "<group>"; };
+		F6AB0DAE88B447FC781D5BA6 /* Pods-GourMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoTests/Pods-GourMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F26FAF91E66859900D1933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE00011071FCF17438ED5BF /* Pods_GourMemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB0D1E66859900D1933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4708927C15CD8D0B85B7F7 /* Pods_GourMemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB181E66859900D1933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5941BCC9EB926B08A6EB3A0 /* Pods_GourMemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F26FAF31E66859900D1933D = {
+			isa = PBXGroup;
+			children = (
+				2F26FAFE1E66859900D1933D /* GourMemo */,
+				2F26FB131E66859900D1933D /* GourMemoTests */,
+				2F26FB1E1E66859900D1933D /* GourMemoUITests */,
+				2F26FAFD1E66859900D1933D /* Products */,
+				5FA1BFEBBC52BE6D9A737BAD /* Pods */,
+				887F0AF4505928557701A1DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F26FAFD1E66859900D1933D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F26FAFC1E66859900D1933D /* GourMemo.app */,
+				2F26FB101E66859900D1933D /* GourMemoTests.xctest */,
+				2F26FB1B1E66859900D1933D /* GourMemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F26FAFE1E66859900D1933D /* GourMemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F26FAFF1E66859900D1933D /* AppDelegate.swift */,
+				2F26FB011E66859900D1933D /* ViewController.swift */,
+				2F26FB031E66859900D1933D /* Main.storyboard */,
+				2F26FB061E66859900D1933D /* Assets.xcassets */,
+				2F26FB081E66859900D1933D /* LaunchScreen.storyboard */,
+				2F26FB0B1E66859900D1933D /* Info.plist */,
+				2F26FB341E66997500D1933D /* FavoriteViewController.swift */,
+				2F26FB361E66A1E000D1933D /* FavoriteTableViewCell.swift */,
+				2F26FB321E6698F200D1933D /* TimelineViewController.swift */,
+			);
+			path = GourMemo;
+			sourceTree = "<group>";
+		};
+		2F26FB131E66859900D1933D /* GourMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F26FB141E66859900D1933D /* GourMemoTests.swift */,
+				2F26FB161E66859900D1933D /* Info.plist */,
+			);
+			path = GourMemoTests;
+			sourceTree = "<group>";
+		};
+		2F26FB1E1E66859900D1933D /* GourMemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F26FB1F1E66859900D1933D /* GourMemoUITests.swift */,
+				2F26FB211E66859900D1933D /* Info.plist */,
+			);
+			path = GourMemoUITests;
+			sourceTree = "<group>";
+		};
+		5FA1BFEBBC52BE6D9A737BAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABABCB0EBBD5E8CDF715BDFE /* Pods-GourMemo.debug.xcconfig */,
+				F223226CF2A50AAC47E0405A /* Pods-GourMemo.release.xcconfig */,
+				F6AB0DAE88B447FC781D5BA6 /* Pods-GourMemoTests.debug.xcconfig */,
+				ADEC409472FC43CD749BBABB /* Pods-GourMemoTests.release.xcconfig */,
+				64A14BC566E5FB26CDD53DCB /* Pods-GourMemoUITests.debug.xcconfig */,
+				0812B341DFDCBFA04C7E8675 /* Pods-GourMemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		887F0AF4505928557701A1DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4FAE64D751CA7B77A560A /* Pods_GourMemo.framework */,
+				17DF9A8F7386B609AD626DBA /* Pods_GourMemoTests.framework */,
+				6845DBFC7DC81443DAD54311 /* Pods_GourMemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F26FAFB1E66859900D1933D /* GourMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F26FB241E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemo" */;
+			buildPhases = (
+				82BEE7BDAC4E47565F1D2D17 /* [CP] Check Pods Manifest.lock */,
+				2F26FAF81E66859900D1933D /* Sources */,
+				2F26FAF91E66859900D1933D /* Frameworks */,
+				2F26FAFA1E66859900D1933D /* Resources */,
+				7E97CF20FF46EC838B054446 /* [CP] Embed Pods Frameworks */,
+				E3D8588D8E81ADAD89E1AB31 /* [CP] Copy Pods Resources */,
+				2F26FB2D1E66899000D1933D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GourMemo;
+			productName = GourMemo;
+			productReference = 2F26FAFC1E66859900D1933D /* GourMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F26FB0F1E66859900D1933D /* GourMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F26FB271E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemoTests" */;
+			buildPhases = (
+				45EB28BD662EF72CF5EC04B6 /* [CP] Check Pods Manifest.lock */,
+				2F26FB0C1E66859900D1933D /* Sources */,
+				2F26FB0D1E66859900D1933D /* Frameworks */,
+				2F26FB0E1E66859900D1933D /* Resources */,
+				59BEDCA8AE2ECE8074480068 /* [CP] Embed Pods Frameworks */,
+				DEA288E166F0B677CE2CF9A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F26FB121E66859900D1933D /* PBXTargetDependency */,
+			);
+			name = GourMemoTests;
+			productName = GourMemoTests;
+			productReference = 2F26FB101E66859900D1933D /* GourMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F26FB1A1E66859900D1933D /* GourMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F26FB2A1E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemoUITests" */;
+			buildPhases = (
+				3B3B724AB34AC8E0164E57FF /* [CP] Check Pods Manifest.lock */,
+				2F26FB171E66859900D1933D /* Sources */,
+				2F26FB181E66859900D1933D /* Frameworks */,
+				2F26FB191E66859900D1933D /* Resources */,
+				1090DE99B4BFE8791E28FDF9 /* [CP] Embed Pods Frameworks */,
+				39B8C8DED8AFAA5110581574 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F26FB1D1E66859900D1933D /* PBXTargetDependency */,
+			);
+			name = GourMemoUITests;
+			productName = GourMemoUITests;
+			productReference = 2F26FB1B1E66859900D1933D /* GourMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F26FAF41E66859900D1933D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Miku Shimizu";
+				TargetAttributes = {
+					2F26FAFB1E66859900D1933D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2F26FB0F1E66859900D1933D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F26FAFB1E66859900D1933D;
+					};
+					2F26FB1A1E66859900D1933D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F26FAFB1E66859900D1933D;
+					};
+				};
+			};
+			buildConfigurationList = 2F26FAF71E66859900D1933D /* Build configuration list for PBXProject "GourMemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F26FAF31E66859900D1933D;
+			productRefGroup = 2F26FAFD1E66859900D1933D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F26FAFB1E66859900D1933D /* GourMemo */,
+				2F26FB0F1E66859900D1933D /* GourMemoTests */,
+				2F26FB1A1E66859900D1933D /* GourMemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F26FAFA1E66859900D1933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F26FB0A1E66859900D1933D /* LaunchScreen.storyboard in Resources */,
+				2F26FB071E66859900D1933D /* Assets.xcassets in Resources */,
+				2F26FB051E66859900D1933D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB0E1E66859900D1933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB191E66859900D1933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1090DE99B4BFE8791E28FDF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F26FB2D1E66899000D1933D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" adc7de5cf4994e866f9d093db15c2ea2c9e7015a 02b38991d0b58c4f078ce84c7939fb012c5898453444e3c9344ce6269222c2fd";
+		};
+		39B8C8DED8AFAA5110581574 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B3B724AB34AC8E0164E57FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45EB28BD662EF72CF5EC04B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59BEDCA8AE2ECE8074480068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemoTests/Pods-GourMemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E97CF20FF46EC838B054446 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemo/Pods-GourMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82BEE7BDAC4E47565F1D2D17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA288E166F0B677CE2CF9A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemoTests/Pods-GourMemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D8588D8E81ADAD89E1AB31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GourMemo/Pods-GourMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F26FAF81E66859900D1933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F26FB021E66859900D1933D /* ViewController.swift in Sources */,
+				2F26FB371E66A1E000D1933D /* FavoriteTableViewCell.swift in Sources */,
+				2F26FB001E66859900D1933D /* AppDelegate.swift in Sources */,
+				2F26FB331E6698F200D1933D /* TimelineViewController.swift in Sources */,
+				2F26FB351E66997500D1933D /* FavoriteViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB0C1E66859900D1933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F26FB151E66859900D1933D /* GourMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F26FB171E66859900D1933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F26FB201E66859900D1933D /* GourMemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F26FB121E66859900D1933D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F26FAFB1E66859900D1933D /* GourMemo */;
+			targetProxy = 2F26FB111E66859900D1933D /* PBXContainerItemProxy */;
+		};
+		2F26FB1D1E66859900D1933D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F26FAFB1E66859900D1933D /* GourMemo */;
+			targetProxy = 2F26FB1C1E66859900D1933D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F26FB031E66859900D1933D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F26FB041E66859900D1933D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F26FB081E66859900D1933D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F26FB091E66859900D1933D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F26FB221E66859900D1933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F26FB231E66859900D1933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F26FB251E66859900D1933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABABCB0EBBD5E8CDF715BDFE /* Pods-GourMemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GourMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2F26FB261E66859900D1933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F223226CF2A50AAC47E0405A /* Pods-GourMemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GourMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2F26FB281E66859900D1933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AB0DAE88B447FC781D5BA6 /* Pods-GourMemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GourMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GourMemo.app/GourMemo";
+			};
+			name = Debug;
+		};
+		2F26FB291E66859900D1933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEC409472FC43CD749BBABB /* Pods-GourMemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GourMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GourMemo.app/GourMemo";
+			};
+			name = Release;
+		};
+		2F26FB2B1E66859900D1933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A14BC566E5FB26CDD53DCB /* Pods-GourMemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GourMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GourMemo;
+			};
+			name = Debug;
+		};
+		2F26FB2C1E66859900D1933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0812B341DFDCBFA04C7E8675 /* Pods-GourMemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GourMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GourMemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F26FAF71E66859900D1933D /* Build configuration list for PBXProject "GourMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F26FB221E66859900D1933D /* Debug */,
+				2F26FB231E66859900D1933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F26FB241E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F26FB251E66859900D1933D /* Debug */,
+				2F26FB261E66859900D1933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F26FB271E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F26FB281E66859900D1933D /* Debug */,
+				2F26FB291E66859900D1933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F26FB2A1E66859900D1933D /* Build configuration list for PBXNativeTarget "GourMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F26FB2B1E66859900D1933D /* Debug */,
+				2F26FB2C1E66859900D1933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F26FAF41E66859900D1933D /* Project object */;
+}
