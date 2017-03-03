@@ -15,6 +15,8 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet var favoritesTableView: UITableView!
     
     let realm = try! Realm()
+    
+    var sendToBrowser: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +41,22 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedUrl: URL = URL(string: realm.objects(FavoriteRestaurant.self)[indexPath.row].url)!
-        let browser = SFSafariViewController(url: selectedUrl, entersReaderIfAvailable: true)
-        self.present(browser, animated: true, completion: nil)
+//        let selectedUrl: URL = URL(string: realm.objects(FavoriteRestaurant.self)[indexPath.row].url)!
+//        let browser = SFSafariViewController(url: selectedUrl, entersReaderIfAvailable: true)
+//        self.present(browser, animated: true, completion: nil)
+        sendToBrowser = realm.objects(FavoriteRestaurant.self)[indexPath.row].url
+        performSegue(withIdentifier: "toBrowser", sender: nil)
+    }
+    
+    // 画面遷移時に値を遷移先に渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toBrowser") {
+            // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
+            let browserView :BrowserViewController = segue.destination as! BrowserViewController
+            // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
+            // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
+            browserView.requestedUrl = sendToBrowser
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,8 +86,4 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     */
 
-}
-
-class FavoriteRestaurant: Object{
-    dynamic var url = ""
 }

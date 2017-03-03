@@ -8,9 +8,10 @@
 
 import UIKit
 import TwitterKit
+import SafariServices
 
 
-class TimelineViewController: TWTRTimelineViewController {
+class TimelineViewController: TWTRTimelineViewController, TWTRTweetViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,12 @@ class TimelineViewController: TWTRTimelineViewController {
         
         let client = TWTRAPIClient()
         self.dataSource = TWTRUserTimelineDataSource(screenName: "favy_jp", apiClient: client)
+        self.tweetViewDelegate = self
 
+    }
+    
+    func tweetView(_ tweetView: TWTRTweetView, didTap url: URL) {
+        self.present(SFSafariViewController(url: url), animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
