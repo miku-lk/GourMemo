@@ -150,7 +150,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="vT6-Ak-axB">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="F3p-4g-9dI"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="F3p-4g-9dI">
+                                            <connections>
+                                                <action selector="done" destination="dop-My-KP6" id="6tl-eT-AYy"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

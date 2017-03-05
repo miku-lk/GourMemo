@@ -11,6 +11,8 @@ import WebKit
 
 class BrowserViewController: UIViewController {
     
+    @IBOutlet var navigationBar: UINavigationBar!
+    
     var webView: WKWebView!
     
     var requestedUrl: String = ""
@@ -50,6 +52,10 @@ class BrowserViewController: UIViewController {
     
     @IBAction func like() {
         NSLog("like")
+    }
+    
+    @IBAction func done(){
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
