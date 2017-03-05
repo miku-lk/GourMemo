@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="-724" y="117"/>
         </scene>
-        <!--Favorite View Controller-->
+        <!--My favorite-->
         <scene sceneID="Kw6-Hm-Qyb">
             <objects>
                 <viewController id="2ne-aD-2hE" customClass="FavoriteViewController" customModule="GourMemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,12 +63,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://github.com/miku-lk?tab=stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-Nr-ACk">
-                                                    <rect key="frame" x="8" y="0.0" width="286" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="286" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-0r-Nw3">
+                                                    <rect key="frame" x="335" y="5" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="line.png"/>
+                                                    <connections>
+                                                        <action selector="sendToLine" destination="2ne-aD-2hE" eventType="touchUpInside" id="dY4-7f-Pfk"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -80,7 +88,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IZK-JD-pJL"/>
+                    <navigationItem key="navigationItem" title="My favorite" id="QwU-ll-2ng"/>
                     <connections>
                         <outlet property="favoritesTableView" destination="CYC-52-i25" id="i4s-tq-SHi"/>
                         <segue destination="dop-My-KP6" kind="modal" identifier="toBrowser" id="v8z-Sd-jCS"/>
@@ -149,7 +157,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="vT6-Ak-axB">
+                                    <navigationItem id="vT6-Ak-axB">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="F3p-4g-9dI">
                                             <connections>
                                                 <action selector="done" destination="dop-My-KP6" id="6tl-eT-AYy"/>
@@ -190,5 +198,6 @@
         <image name="back.png" width="32" height="32"/>
         <image name="forward.png" width="32" height="32"/>
         <image name="like.png" width="32" height="32"/>
+        <image name="line.png" width="473" height="473"/>
     </resources>
 </document>

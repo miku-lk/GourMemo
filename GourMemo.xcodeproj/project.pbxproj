@@ -22,6 +22,7 @@
 		2F26FB401E693A6200D1933D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB3D1E693A6200D1933D /* back.png */; };
 		2F26FB411E693A6200D1933D /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB3E1E693A6200D1933D /* forward.png */; };
 		2F26FB441E6987A300D1933D /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB431E6987A300D1933D /* like.png */; };
+		2F26FB461E6C584000D1933D /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB451E6C584000D1933D /* line.png */; };
 		5CE00011071FCF17438ED5BF /* Pods_GourMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF4FAE64D751CA7B77A560A /* Pods_GourMemo.framework */; };
 		9F4708927C15CD8D0B85B7F7 /* Pods_GourMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF9A8F7386B609AD626DBA /* Pods_GourMemoTests.framework */; };
 		B5941BCC9EB926B08A6EB3A0 /* Pods_GourMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6845DBFC7DC81443DAD54311 /* Pods_GourMemoUITests.framework */; };
@@ -68,6 +69,7 @@
 		2F26FB3D1E693A6200D1933D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		2F26FB3E1E693A6200D1933D /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		2F26FB431E6987A300D1933D /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		2F26FB451E6C584000D1933D /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		64A14BC566E5FB26CDD53DCB /* Pods-GourMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6845DBFC7DC81443DAD54311 /* Pods_GourMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF4FAE64D751CA7B77A560A /* Pods_GourMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				2F26FB3D1E693A6200D1933D /* back.png */,
 				2F26FB3E1E693A6200D1933D /* forward.png */,
 				2F26FB431E6987A300D1933D /* like.png */,
+				2F26FB451E6C584000D1933D /* line.png */,
 			);
 			path = icons;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F26FB401E693A6200D1933D /* back.png in Resources */,
+				2F26FB461E6C584000D1933D /* line.png in Resources */,
 				2F26FB0A1E66859900D1933D /* LaunchScreen.storyboard in Resources */,
 				2F26FB441E6987A300D1933D /* like.png in Resources */,
 				2F26FB071E66859900D1933D /* Assets.xcassets in Resources */,

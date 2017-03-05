@@ -41,11 +41,19 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedUrl: URL = URL(string: realm.objects(FavoriteRestaurant.self)[indexPath.row].url)!
-//        let browser = SFSafariViewController(url: selectedUrl, entersReaderIfAvailable: true)
-//        self.present(browser, animated: true, completion: nil)
         sendToBrowser = realm.objects(FavoriteRestaurant.self)[indexPath.row].url
         performSegue(withIdentifier: "toBrowser", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
+        let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
+        cell.urlLabel.text = data.url
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return realm.objects(FavoriteRestaurant.self).count
     }
     
     // 画面遷移時に値を遷移先に渡す
@@ -59,15 +67,30 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
-        let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
-        cell.urlLabel.text = data.url
-        return cell
+    @IBAction func sendToLine(){
+//        sendMessage(realm.objects(FavoriteRestaurant.self)[indexPath.row].url)
+        NSLog("LINE!")
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return realm.objects(FavoriteRestaurant.self).count
+    // LINE
+    func sendMessage(_ text: String)  {
+        
+        let lineSchemeMessage: String! = "line://msg/text/"
+        var scheme: String! = lineSchemeMessage + text
+        
+        scheme = scheme.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let messageURL: URL! = URL(string: scheme)
+        
+        self.openURL(messageURL)
+    }
+    
+    func openURL(_ url: URL) {
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            // 本来であれば、指定したURLで開けないときの実装を別途行う必要がある
+            print("failed to open..")
+        }
     }
 
     override func didReceiveMemoryWarning() {
