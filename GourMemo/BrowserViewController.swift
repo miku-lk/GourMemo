@@ -19,13 +19,15 @@ class BrowserViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         // WKWebViewを生成
-        webView = WKWebView(frame:CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height - 40))
+        let y = statusbarHeight + navigationbarHeight
+        webView = WKWebView(frame:CGRect(x: 0, y: y, width: self.view.bounds.size.width, height: self.view.bounds.size.height - y - toolbarHeight))
         
         // フリップで進む・戻るを許可
         webView.allowsBackForwardNavigationGestures = true
         
-        // Googleを表示
+        // 表示
         let urlString = requestedUrl
         let url = NSURL(string: urlString)
         let request = NSURLRequest(url: url! as URL)
