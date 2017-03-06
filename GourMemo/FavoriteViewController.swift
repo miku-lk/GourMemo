@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import SafariServices
+import URLEmbeddedView
 
 class FavoriteViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -49,6 +50,11 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
         let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
         cell.urlLabel.text = data.url
+        
+        let embeddedView = URLEmbeddedView()
+        embeddedView.loadURL("http://qiita.com/szk-atmosphere/items/a723a344d8c371e615ba")
+//        view.addSubView(embeddedView)
+        
         return cell
     }
     

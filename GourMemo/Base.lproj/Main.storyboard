@@ -73,13 +73,11 @@
                                                     <rect key="frame" x="335" y="5" width="32" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="line.png"/>
-                                                    <connections>
-                                                        <action selector="sendToLine" destination="2ne-aD-2hE" eventType="touchUpInside" id="dY4-7f-Pfk"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="toLineButton" destination="bw3-0r-Nw3" id="xT8-te-48S"/>
                                             <outlet property="urlLabel" destination="ec0-Nr-ACk" id="rM6-qv-PfT"/>
                                         </connections>
                                     </tableViewCell>

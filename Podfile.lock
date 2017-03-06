@@ -1,5 +1,8 @@
 PODS:
+  - CryptoSwift (0.6.7)
   - Fabric (1.6.11)
+  - Kanna (2.1.1)
+  - MisterFusion (2.1.0)
   - Realm (2.4.3):
     - Realm/Headers (= 2.4.3)
   - Realm/Headers (2.4.3)
@@ -10,21 +13,30 @@ PODS:
     - Fabric
   - TwitterKit (2.8.0):
     - TwitterCore (= 2.8.0)
+  - URLEmbeddedView (0.7.0):
+    - CryptoSwift (~> 0.6.7)
+    - Kanna (~> 2.1.1)
+    - MisterFusion (~> 2.1.0)
 
 DEPENDENCIES:
   - Fabric
   - RealmSwift
   - SwiftyJSON
   - TwitterKit
+  - URLEmbeddedView
 
 SPEC CHECKSUMS:
+  CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
+  MisterFusion: 9f6df9ac06559d21e710510a737f877abec92486
   Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
   RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
+  URLEmbeddedView: 5ab60f718bb8b8c72e852bf5aa91b095ae74761e
 
-PODFILE CHECKSUM: 8d6b20af4fbd48485753251ff8d213c88305c256
+PODFILE CHECKSUM: eff2328d0a508f193f0872a8d9b55934f19f120e
 
 COCOAPODS: 1.2.0

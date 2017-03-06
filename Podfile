@@ -10,6 +10,7 @@ target 'GourMemo' do
   pod 'TwitterKit'
   pod 'RealmSwift'
   pod 'SwiftyJSON'
+  pod 'URLEmbeddedView'
 
   target 'GourMemoTests' do
     inherit! :search_paths

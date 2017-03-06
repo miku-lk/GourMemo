@@ -11,6 +11,7 @@ import UIKit
 class FavoriteTableViewCell: UITableViewCell {
     
     @IBOutlet var urlLabel: UILabel!
+    @IBOutlet var toLineButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
