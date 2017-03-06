@@ -278,6 +278,7 @@
 				TargetAttributes = {
 					2F26FAFB1E66859900D1933D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M29DV37ALY;
 						ProvisioningStyle = Automatic;
 					};
 					2F26FB0F1E66859900D1933D = {
@@ -656,6 +657,7 @@
 			baseConfigurationReference = ABABCB0EBBD5E8CDF715BDFE /* Pods-GourMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M29DV37ALY;
 				INFOPLIST_FILE = GourMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemo;
@@ -669,6 +671,7 @@
 			baseConfigurationReference = F223226CF2A50AAC47E0405A /* Pods-GourMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M29DV37ALY;
 				INFOPLIST_FILE = GourMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lifeistech.GourMemo;

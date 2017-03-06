@@ -41,15 +41,14 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
 
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        sendToBrowser = realm.objects(FavoriteRestaurant.self)[indexPath.row].url
-        performSegue(withIdentifier: "toBrowser", sender: nil)
-    }
-    
+    // セルを生成する
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
         let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
         cell.urlLabel.text = data.url
+        
+        cell.toLineButton.addTarget(self, action: #selector(self.openLine(button:)) , for: .touchUpInside)
+        
         
         let embeddedView = URLEmbeddedView()
         embeddedView.loadURL("http://qiita.com/szk-atmosphere/items/a723a344d8c371e615ba")
@@ -58,27 +57,13 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return realm.objects(FavoriteRestaurant.self).count
-    }
-    
-    // 画面遷移時に値を遷移先に渡す
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toBrowser") {
-            // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
-            let browserView :BrowserViewController = segue.destination as! BrowserViewController
-            // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
-            // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
-            browserView.requestedUrl = sendToBrowser
-        }
-    }
-    
-    @IBAction func sendToLine(){
-//        sendMessage(realm.objects(FavoriteRestaurant.self)[indexPath.row].url)
-        NSLog("LINE!")
-    }
-    
     // LINE
+    func openLine(button: UIButton!){
+        let cell = button.superview?.superview as! FavoriteTableViewCell
+        let message = cell.urlLabel.text
+        sendMessage(message!)
+    }
+    
     func sendMessage(_ text: String)  {
         
         let lineSchemeMessage: String! = "line://msg/text/"
@@ -98,7 +83,28 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
             print("failed to open..")
         }
     }
-
+    
+    // セルをタップしてブラウザを開く
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        sendToBrowser = realm.objects(FavoriteRestaurant.self)[indexPath.row].url
+        performSegue(withIdentifier: "toBrowser", sender: nil)
+    }
+    
+    // 画面遷移時に値を遷移先に渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toBrowser") {
+            // SecondViewControllerクラスをインスタンス化してsegue（画面遷移）で値を渡せるようにバンドルする
+            let browserView :BrowserViewController = segue.destination as! BrowserViewController
+            // secondView（バンドルされた変数）に受け取り用の変数を引数とし_paramを渡す（_paramには渡したい値）
+            // この時SecondViewControllerにて受け取る同型の変数を用意しておかないとエラーになる
+            browserView.requestedUrl = sendToBrowser
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return realm.objects(FavoriteRestaurant.self).count
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
