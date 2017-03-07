@@ -27,16 +27,10 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         favoritesTableView.dataSource = self
         
 //        let url_1 = FavoriteRestaurant()
-//        url_1.url = "https://google.co.jp"
-//        let url_2 = FavoriteRestaurant()
-//        url_2.url = "http://yahoo.co.jp"
-//        let url_3 = FavoriteRestaurant()
-//        url_3.url = "https://twitter.com/miku_lk_"
+//        url_1.url = "http://www.favy.jp/topics/13494"
 //        
 //        try! realm.write {
 //            realm.add(url_1)
-//            realm.add(url_2)
-//            realm.add(url_3)
 //        }
 
     }

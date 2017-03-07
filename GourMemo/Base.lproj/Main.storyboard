@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--favy-->
         <scene sceneID="WBR-6a-3Ez">
             <objects>
                 <tableViewController id="8K3-Se-Of1" customClass="TimelineViewController" customModule="GourMemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="8K3-Se-Of1" id="6Qf-z4-U63"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="tUS-1z-Uws"/>
+                    <tabBarItem key="tabBarItem" title="favy" image="restaurant.png" id="tUS-1z-Uws"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHh-xq-pW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,20 +50,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="168" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CYC-52-i25">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CYC-52-i25">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="168" id="bhe-m1-DE4" customClass="FavoriteTableViewCell" customModule="GourMemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="168"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="143" id="bhe-m1-DE4" customClass="FavoriteTableViewCell" customModule="GourMemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bhe-m1-DE4" id="6TW-cC-nYJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://github.com/miku-lk?tab=stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-Nr-ACk">
-                                                    <rect key="frame" x="8" y="11" width="286" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://github.com/miku-lk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-Nr-ACk">
+                                                    <rect key="frame" x="8" y="11" width="205" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -75,7 +75,7 @@
                                                     <state key="normal" image="line.png"/>
                                                 </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-HU-M9N" customClass="URLEmbeddedView" customModule="URLEmbeddedView">
-                                                    <rect key="frame" x="0.0" y="40" width="375" height="119"/>
+                                                    <rect key="frame" x="0.0" y="40" width="375" height="97"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -178,11 +178,11 @@
             </objects>
             <point key="canvasLocation" x="1814" y="116"/>
         </scene>
-        <!--Item 2-->
+        <!--favorite-->
         <scene sceneID="0EY-dO-gCE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9B-ux-JEI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0R3-d4-KTN"/>
+                    <tabBarItem key="tabBarItem" title="favorite" image="like.png" id="0R3-d4-KTN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ooF-d2-H3A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -203,5 +203,6 @@
         <image name="forward.png" width="32" height="32"/>
         <image name="like.png" width="32" height="32"/>
         <image name="line.png" width="473" height="473"/>
+        <image name="restaurant.png" width="32" height="32"/>
     </resources>
 </document>

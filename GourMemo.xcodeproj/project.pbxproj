@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F137EDE1E6F1F4E00656AC2 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F137EDD1E6F1F4E00656AC2 /* restaurant.png */; };
 		2F26FB001E66859900D1933D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FAFF1E66859900D1933D /* AppDelegate.swift */; };
 		2F26FB021E66859900D1933D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FB011E66859900D1933D /* ViewController.swift */; };
 		2F26FB051E66859900D1933D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F26FB031E66859900D1933D /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0812B341DFDCBFA04C7E8675 /* Pods-GourMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GourMemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GourMemoUITests/Pods-GourMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		17DF9A8F7386B609AD626DBA /* Pods_GourMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GourMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F137EDD1E6F1F4E00656AC2 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
 		2F26FAFC1E66859900D1933D /* GourMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GourMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F26FAFF1E66859900D1933D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F26FB011E66859900D1933D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				2F26FB3E1E693A6200D1933D /* forward.png */,
 				2F26FB431E6987A300D1933D /* like.png */,
 				2F26FB451E6C584000D1933D /* line.png */,
+				2F137EDD1E6F1F4E00656AC2 /* restaurant.png */,
 			);
 			path = icons;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				2F26FB401E693A6200D1933D /* back.png in Resources */,
 				2F26FB461E6C584000D1933D /* line.png in Resources */,
+				2F137EDE1E6F1F4E00656AC2 /* restaurant.png in Resources */,
 				2F26FB0A1E66859900D1933D /* LaunchScreen.storyboard in Resources */,
 				2F26FB441E6987A300D1933D /* like.png in Resources */,
 				2F26FB071E66859900D1933D /* Assets.xcassets in Resources */,
