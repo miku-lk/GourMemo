@@ -41,7 +41,13 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
 
     }
     
-    // セルを生成する
+    // 表示するたびにリロードする
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        favoritesTableView.reloadData()
+    }
+    
+    // セルを生成する時の処理
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
         let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]

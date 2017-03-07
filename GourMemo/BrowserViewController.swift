@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import RealmSwift
 
 class BrowserViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class BrowserViewController: UIViewController {
     var webView: WKWebView!
     
     var requestedUrl: String = ""
+    let realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,17 +43,27 @@ class BrowserViewController: UIViewController {
     }
     
     @IBAction func back() {
-        NSLog("back")
         self.webView.goBack()
     }
     
     @IBAction func forward() {
-        NSLog("forward")
         self.webView.goForward()
     }
     
     @IBAction func like() {
-        NSLog("like")
+        let addToRealm = FavoriteRestaurant()
+        
+        // optional binding
+        if let url = self.webView.url {
+            addToRealm.url = String(describing: url)
+            
+            try! realm.write {
+                realm.add(addToRealm)
+            }
+        }
+        
+        
+        
     }
     
     @IBAction func done(){
