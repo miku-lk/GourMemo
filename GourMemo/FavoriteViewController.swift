@@ -57,8 +57,8 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         
         
         let embeddedView = URLEmbeddedView()
-        embeddedView.loadURL("http://qiita.com/szk-atmosphere/items/a723a344d8c371e615ba")
-//        view.addSubView(embeddedView)
+        embeddedView.loadURL(data.url)
+        cell.addSubview(embeddedView)
         
         return cell
     }
