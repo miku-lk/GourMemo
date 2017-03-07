@@ -63,6 +63,19 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
+            try! realm.write {
+                realm.delete(data)
+            }
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
+    
     // LINE
     func openLine(button: UIButton!){
         let cell = button.superview?.superview as! FavoriteTableViewCell
