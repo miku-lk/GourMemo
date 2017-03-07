@@ -74,9 +74,15 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="line.png"/>
                                                 </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-HU-M9N" customClass="URLEmbeddedView" customModule="URLEmbeddedView">
+                                                    <rect key="frame" x="0.0" y="40" width="375" height="119"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="embededView" destination="SGP-HU-M9N" id="EvV-xX-766"/>
                                             <outlet property="toLineButton" destination="bw3-0r-Nw3" id="xT8-te-48S"/>
                                             <outlet property="urlLabel" destination="ec0-Nr-ACk" id="rM6-qv-PfT"/>
                                         </connections>

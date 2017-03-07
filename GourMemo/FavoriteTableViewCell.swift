@@ -8,11 +8,13 @@
 
 import UIKit
 import RealmSwift
+import URLEmbeddedView
 
 class FavoriteTableViewCell: UITableViewCell {
     
     @IBOutlet var urlLabel: UILabel!
     @IBOutlet var toLineButton: UIButton!
+    @IBOutlet weak var embededView: URLEmbeddedView!
     
     var realmIndexPath: Int!
 
