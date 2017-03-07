@@ -52,13 +52,9 @@ class FavoriteViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell") as! FavoriteTableViewCell
         let data = self.realm.objects(FavoriteRestaurant.self)[indexPath.row]
         cell.urlLabel.text = data.url
-        
         cell.toLineButton.addTarget(self, action: #selector(self.openLine(button:)) , for: .touchUpInside)
         
-        
-        let embeddedView = URLEmbeddedView()
-        embeddedView.loadURL(data.url)
-        cell.addSubview(embeddedView)
+        cell.embededView.loadURL(data.url)
         
         return cell
     }
