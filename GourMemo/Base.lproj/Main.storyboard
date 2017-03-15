@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ePY-K9-u0B" id="AHt-CM-ron">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -59,7 +59,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bhe-m1-DE4" id="6TW-cC-nYJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://github.com/miku-lk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-Nr-ACk">
@@ -114,11 +114,52 @@
                     <connections>
                         <segue destination="8K3-Se-Of1" kind="relationship" relationship="viewControllers" id="GUd-dZ-6ml"/>
                         <segue destination="q9B-ux-JEI" kind="relationship" relationship="viewControllers" id="PNC-zy-lNi"/>
+                        <segue destination="Jgb-sK-HRU" kind="relationship" relationship="viewControllers" id="gLr-co-4KC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxS-Cl-w6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="-723"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eud-cu-qDE">
+            <objects>
+                <viewController id="Jgb-sK-HRU" customClass="SearchViewController" customModule="GourMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucQ-N0-Mrp"/>
+                        <viewControllerLayoutGuide type="bottom" id="iRu-WD-M5m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="peM-bw-Khf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-R5-kmn">
+                                <rect key="frame" x="263" y="316" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="search.png"/>
+                                <connections>
+                                    <action selector="search" destination="Jgb-sK-HRU" eventType="touchUpInside" id="aV3-Mg-ok2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lN9-LI-y8S">
+                                <rect key="frame" x="71" y="318" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lON-Ty-QQ1"/>
+                    <connections>
+                        <outlet property="searchButton" destination="I7J-R5-kmn" id="2FA-CC-Xss"/>
+                        <outlet property="searchTextField" destination="lN9-LI-y8S" id="9Dw-Fo-ia2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aL-at-rx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293.5999999999999" y="-724.58770614692662"/>
         </scene>
         <!--Browser View Controller-->
         <scene sceneID="O1n-Oa-d2h">
@@ -204,5 +245,6 @@
         <image name="like.png" width="32" height="32"/>
         <image name="line.png" width="473" height="473"/>
         <image name="restaurant.png" width="32" height="32"/>
+        <image name="search.png" width="32" height="32"/>
     </resources>
 </document>
